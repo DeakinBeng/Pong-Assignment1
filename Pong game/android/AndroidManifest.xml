@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".GameStarter" />
+        <activity android:name=".GameStarter"  />
 
     </application>
 
