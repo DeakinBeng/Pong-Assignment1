@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="header_size">95sp</dimen>
+
+    <dimen name="menu_button_text">45sp</dimen>
+
+    <dimen name="button_margin">5dp</dimen>
+</resources>
