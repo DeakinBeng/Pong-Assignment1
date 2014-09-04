@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">Pong</string>
-
     <string name="header">PONG</string>
 
     <string-array name="main_menu">
@@ -12,7 +11,6 @@
         <item>ABOUT</item>
         <item>EXIT</item>
     </string-array>
-
     <string-array name="new_game">
         <item>EASY</item>
         <item>MEDIUM</item>
@@ -20,10 +18,16 @@
         <item>CUSTOM</item>
     </string-array>
 
-    <string name="about_string">
-        Pong is one of the earliest arcade video games; it is a tennis sports game featuring simple two-dimensional graphics.
+    <string name="about_string">Pong is one of the earliest arcade video games; it is a tennis sports game featuring simple two-dimensional graphics.
         While other arcade video games such as Computer Space came before it,
         Pong was one of the first video games to reach mainstream popularity.
-        The aim is to defeat an opponent in a simulated table-tennis game by earning a higher score. \n\nPong - Wikipedia, the free encyclopedia. 2014. Pong - Wikipedia, the free encyclopedia. [ONLINE] Available at: http://en.wikipedia.org/wiki/Pong. [Accessed 27 August 2014].
-    </string>
+        The aim is to defeat an opponent in a simulated table-tennis game by earning a higher score. \n\nPong - Wikipedia, the free encyclopedia. 2014. Pong - Wikipedia, the free encyclopedia. [ONLINE] Available at: http://en.wikipedia.org/wiki/Pong. [Accessed 27 August 2014].</string>
+    <string name="title_activity_game">Game</string>
+    <string name="about_pong_animation_description">Pong animation</string>
+    <string name="ball_speed_text">Ball speed (per hit):</string>
+    <string name="num_balls_text">Number of balls:</string>
+    <string name="lose_on_firstball_text">Lose on first ball drop:</string>
+    <string name="padle_colour_text">Paddle colour:</string>
+    <string name="ball_colour_text">Ball colour:</string>
+
 </resources>

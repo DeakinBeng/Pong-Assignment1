@@ -21,20 +21,44 @@
     <ViewAnimator
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_below="@id/header"
         android:id="@+id/layout_container">
 
-        <ListView
-            android:id="@+id/main_menu_list_view"
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:dividerHeight="@dimen/button_margin" />
+            android:stretchColumns="*"
+            >
+
+            <TableRow>
+
+                <include
+                    layout="@layout/menu_item"
+                    android:id="@+id/main_menu_newgame" />
+
+                <include
+                    layout="@layout/menu_item"
+                    android:id="@+id/main_menu_scores" />
+            </TableRow>
+
+            <TableRow>
+
+                <include
+                    layout="@layout/menu_item"
+                    android:id="@+id/main_menu_about" />
+
+                <include
+                    layout="@layout/menu_item"
+                    android:id="@+id/main_menu_exit" />
+            </TableRow>
+
+        </TableLayout>
 
         <ListView
             android:id="@+id/new_game_list_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:dividerHeight="@dimen/button_margin" />
+            android:dividerHeight="@dimen/button_margin"></ListView>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -43,7 +67,7 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -54,7 +78,6 @@
                 <ImageView
                     android:id="@+id/animatedPong"
                     android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/about_pong_animation_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -75,7 +98,7 @@
                     android:id="@android:id/tabs"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/background"/>
+                    android:background="@color/background"></TabWidget>
 
                 <FrameLayout
                     android:id="@android:id/tabcontent"
@@ -87,7 +110,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:divider="#6e32bcff"
-                        android:dividerHeight="2dp">
+                        android:dividerHeight="2px">
 
                     </ListView>
 
@@ -96,7 +119,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:divider="#6e32bcff"
-                        android:dividerHeight="2dp">
+                        android:dividerHeight="2px">
 
                     </ListView>
 
@@ -105,7 +128,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:divider="#6e32bcff"
-                        android:dividerHeight="2dp">
+                        android:dividerHeight="2px">
 
                     </ListView>
                 </FrameLayout>

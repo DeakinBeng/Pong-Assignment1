@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/dialogbackground"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num_balls_text"
+                android:textColor="@color/font"
+                android:textSize="@dimen/dialog_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/dialog_text"
+                android:textColor="@color/font"
+                android:id="@+id/num_balls_tv"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/num_balls_seekbar"
+                android:max="4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ball_speed_text"
+                android:textColor="@color/font"
+                android:textSize="@dimen/dialog_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.2"
+                android:textSize="@dimen/dialog_text"
+                android:textColor="@color/font"
+                android:id="@+id/ball_inc_speed_tv"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/ball_inc_speed_seekbar"
+                android:max="8" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lose_on_firstball_text"
+                android:textColor="@color/font"
+                android:textSize="@dimen/dialog_text" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/checkBox3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/padle_colour_text"
+                android:textColor="@color/font"
+                android:textSize="@dimen/dialog_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:id="@+id/paddle_color"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@color/font" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ball_colour_text"
+                android:textColor="@color/font"
+                android:textSize="@dimen/dialog_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:id="@+id/ball_color"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@color/font" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
